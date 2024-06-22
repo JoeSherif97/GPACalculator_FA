@@ -1,1 +1,1 @@
-# GPA Calculator Csharpy
+# GPA Calculator for Future Academy
