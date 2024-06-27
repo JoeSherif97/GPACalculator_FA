@@ -116,6 +116,19 @@ In the example provided in the screenshot:
 
 #### Letter Grader Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/6890a04b-4d33-44ad-bb2a-10a49b0ff712)
+##### Overview
+This feature allows users to input their Grade Point Average (GPA) and receive the corresponding letter grade based on a predefined grading scale.
+
+##### Functionality
+###### User Input:
+The user is prompted to enter their GPA.
+###### GPA Conversion:
+The application converts the numeric GPA into a letter grade using a predefined scale.
+###### Output:
+The application displays the input GPA and its corresponding letter grade.
+
+##### Purpose
+This feature helps users quickly determine the letter grade equivalent of their GPA, facilitating a better understanding of their academic performance in a more familiar format.
 
 #### Future GPA Prediction Function: (2 cases)
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/149a24e9-1792-43ce-9c61-2e75525c1589)
