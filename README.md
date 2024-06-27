@@ -102,8 +102,10 @@ Displays the main menu options to the user:
 ## Application Screenshots
 
 ### Screenshot Example
+#### Main Menu:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/40df4f31-4448-47c3-a3d3-73ce9fc77c1d)
 
+#### GPA Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/a1e757f5-a879-43f6-8831-22f59166ab53)
 
 In the example provided in the screenshot:
@@ -111,6 +113,22 @@ In the example provided in the screenshot:
 - They are then asked to enter the number of subjects for the semester.
 - For each subject, the user inputs the letter grade followed by the credit hours.
 - The application calculates and displays the semester GPA, cumulative GPA, and permitted hours for the next semester.
+
+#### Letter Grader Function:
+![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/6890a04b-4d33-44ad-bb2a-10a49b0ff712)
+
+#### Future GPA Prediction Function: (2 cases)
+![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/149a24e9-1792-43ce-9c61-2e75525c1589)
+![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/1b0e6e08-6f05-4751-a315-bf6ebc08e605)
+
+#### Average Grade Calculate Function:
+![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/a470d817-43e1-438d-aa9e-4599221285f2)
+
+#### Target Subject GPA Calculate Function:
+![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/e5382ba0-5e21-42e5-9119-f5eda039d005)
+
+#### About:
+![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/6c8494ff-2542-4244-8966-64126d8e30c4)
 
 ## Developers
 
