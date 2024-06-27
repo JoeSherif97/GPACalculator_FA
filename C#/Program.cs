@@ -358,13 +358,35 @@ class Program
         {
             MainMenu();
             menu = Convert.ToChar(Console.ReadLine());
-            if (menu == '1') Calculate(ref Sem, ref Semester, ref SubjectNb, ref Hr, ref TotalHour, ref TotalPoS, ref St, ref Hours, ref Subjects, ref Subj, ref PoS, ref SumPoS, ref SumHour);
-            else if (menu == '2') { Console.WriteLine("Your GPA has the Letter Grade of " + GGPA()); Clean(); }
-            else if (menu == '3') { Console.WriteLine(FGPA()); Clean(); }
-            else if (menu == '4') { Console.WriteLine(ASGPA()); Clean(); }
-            else if (menu == '5') TSGPA();
-            else if (menu == '6') About();
-            else if (menu == '7') Exit(ref exit, ref on, ref off);
+            switch (menu) {
+            case '1':
+                Calculate(ref Sem, ref Semester, ref SubjectNb, ref Hr, ref TotalHour, ref TotalPoS, ref St, ref Hours, ref Subjects, ref Subj, ref PoS, ref SumPoS, ref SumHour);
+                break;
+            case '2':
+                Console.WriteLine("Your GPA has the Letter Grade of " + GGPA());
+                Clean();
+                break;
+            case '3':
+                Console.WriteLine(FGPA());
+                Clean();
+                break;
+            case '4':
+                Console.WriteLine(ASGPA());
+                Clean();
+                break;
+            case '5':
+                TSGPA();
+                break;
+            case '6':
+                About();
+                break;
+            case '7':
+                Exit(ref exit, ref on, ref off);
+                break;
+            default:
+                Console.WriteLine("Invalid Input");
+                break;
+            };
             
         }
         while (on);
