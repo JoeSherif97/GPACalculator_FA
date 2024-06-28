@@ -133,9 +133,36 @@ This feature helps users quickly determine the letter grade equivalent of their 
 #### Future GPA Prediction Function: (2 cases)
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/149a24e9-1792-43ce-9c61-2e75525c1589)
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/1b0e6e08-6f05-4751-a315-bf6ebc08e605)
+### Feature Overview
+
+**Functionality and Purpose:**
+
+1. **Enter Current and Target GPA:**
+   - **Overview:** This feature allows users to input their current GPA and the target GPA they aim to achieve. The program then calculates the GPA needed in the next semester to reach the target GPA.
+   - **Functionality:**
+     - **User Input:** The user is prompted to enter their current GPA and the desired GPA.
+     - **Calculation:** The program calculates whether the target GPA is achievable in one semester.
+     - **Output (Case 1):** If the target GPA is achievable, the program provides the required GPA for the next semester.
+       - **Example:** With a current GPA of 2.6 and a target GPA of 2.8, the program suggests an estimated GPA of 3.0 for the next semester.
+     - **Output (Case 2):** If the target GPA is not achievable in one semester, the program informs the user and provides an alternative achievable GPA.
+       - **Example:** With a current GPA of 2.6 and a target GPA of 3.5, the program indicates that the target cannot be reached in one semester. It suggests that if the user achieves a GPA of 4.0 next semester, the new GPA will be 3.3.
+   - **Purpose:** This feature helps students set realistic academic goals by understanding the GPA they need to achieve in the upcoming semester to reach their overall GPA targets. It also provides a sense of achievable goals when the desired GPA is too high to be attained in one semester.
 
 #### Average Grade Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/a470d817-43e1-438d-aa9e-4599221285f2)
+
+### Feature Overview
+
+**Functionality and Purpose:**
+
+1. **Enter Current GPA and Target GPA to Determine Required Average Letter Grade:**
+   - **Overview:** This feature allows users to input their current GPA and the GPA they aim to achieve. The program calculates the average letter grade the user needs to obtain in their subjects next semester to reach the target GPA.
+   - **Functionality:**
+     - **User Input:** The user enters their current GPA and the desired GPA.
+     - **Calculation:** The program computes the average letter grade required in the next semester to achieve the target GPA.
+     - **Output:** The program informs the user of the necessary average letter grade to reach their target GPA.
+       - **Example:** With a current GPA of 2.6 and a target GPA of 3.0, the program indicates that the user needs to achieve an average grade of A- in their subjects next semester to reach the target GPA.
+   - **Purpose:** This feature assists students in understanding the level of academic performance required in the upcoming semester to achieve their GPA goals. It provides clear guidance on the average letter grade needed, helping students set realistic expectations and plan their study efforts accordingly.
 
 #### Target Subject GPA Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/e5382ba0-5e21-42e5-9119-f5eda039d005)
