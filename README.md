@@ -167,6 +167,22 @@ This feature helps users quickly determine the letter grade equivalent of their 
 #### Target Subject GPA Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/e5382ba0-5e21-42e5-9119-f5eda039d005)
 
+#### Feature Overview
+
+**Functionality and Purpose:**
+
+2. **Enter Number of Subjects, Current GPA, and Target GPA to Determine Required Grades:**
+   - **Overview:** This feature enables users to input the number of subjects they will take in the next semester, along with their current GPA and desired GPA. The program calculates the specific grades needed in each subject to achieve the target GPA, assuming all subjects have the same credit hours.
+   - **Functionality:**
+     - **User Input:** The user enters:
+       - The number of subjects for the next semester.
+       - Their current GPA.
+       - The GPA they aim to achieve.
+     - **Calculation:** The program computes the required grades for each subject to reach the desired GPA.
+     - **Output:** The program displays the minimum grade required for each subject to achieve the target GPA.
+       - **Example:** With 6 subjects, a current GPA of 2.6, and a target GPA of 3.0, the program specifies the necessary grades for each subject, such as A+ for most subjects and a D- for one subject, to reach a GPA of 3.4.
+   - **Purpose:** This feature helps students understand the specific academic performance needed in each subject to reach their GPA goals. It provides clear and actionable insights, allowing students to strategize their study efforts and focus on achieving the necessary grades in each subject.
+
 #### About:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/6c8494ff-2542-4244-8966-64126d8e30c4)
 
