@@ -43,15 +43,15 @@ class Program
             try
             {
                 Console.WriteLine("Do you want to exit the app? (y/Y for yes & n/N for No):");
-                off = Convert.ToChar(Console.ReadLine());
-                if (!(((off == 'y') || (off == 'Y')) || ((off == 'n') || (off == 'N')))) { throw new Exception("Invalid Input"); };
+                off = Convert.ToChar(Console.ReadLine().ToLower());
+                if (!((off == 'y') || (off == 'n'))) { throw new Exception("Invalid Input"); };
             }
             catch (Exception)
             {
                 Console.WriteLine("\nInvalid Input, enter either y/Y or n/N\n");
                 Clean();
             }
-            if (off == 'y' || off == 'Y')
+            if (off == 'y')
             {
                 on = false;
                 exit = false;
@@ -69,32 +69,55 @@ class Program
 
     static double Grade(string letter)  //Functon to transform the letter grade to numerical value
     {
-        switch (letter[0])
+        if (letter.Length == 1)
         {
-            case 'A':
-                if (letter.Length == 1) return 3.7;
-                else if (letter[1] == '+') return 4.0;
-                else if (letter[1] == '-') return 3.4;
-                break;
-            case 'B':
-                if (letter.Length == 1) return 3.0;
-                else if (letter[1] == '+') return 3.2;
-                else if (letter[1] == '-') return 2.8;
-                break;
-            case 'C':
-                if (letter.Length == 1) return 2.4;
-                else if (letter[1] == '+') return 2.6;
-                else if (letter[1] == '-') return 2.2;
-                break;
-            case 'D':
-                if (letter.Length == 1) return 1.5;
-                else if (letter[1] == '+') return 2.0;
-                else if (letter[1] == '-') return 1.0;
-                break;
-            case 'F':
-                return 0.0;
-            default:
-                return 0;
+            switch (letter[0])
+            {
+                case 'A':
+                    return 3.7;
+                case 'B':
+                    return 3.0;
+                case 'C':
+                    return 2.4;
+                case 'D':
+                    return 1.5;
+                case 'F':
+                    return 0.0;
+                default: return 0;
+            }
+        }
+        else if (letter.Length > 1) 
+        {
+            switch (letter[1])
+            {
+                case '+':
+                    switch (letter[0])
+                    {
+                        case 'A':
+                            return 4.0;
+                        case 'B':
+                            return 3.2;
+                        case 'C':
+                            return 2.6;
+                        case 'D':
+                            return 2.0;
+                    }
+                    break;
+                case '-':
+                    switch (letter[0])
+                    {
+                        case 'A':
+                            return 3.4;
+                        case 'B':
+                            return 2.8;
+                        case 'C':
+                            return 2.2;
+                        case 'D':
+                            return 1.0;
+                    }
+                    break;
+                default: return 0;
+            }
         }
         return 0;
     }
@@ -301,7 +324,7 @@ class Program
             for (int j = 0; j < SubjectNb; j++)
             {
                 Console.WriteLine("Enter Subject Number " + (j + 1) + ": ");
-                St = Console.ReadLine();
+                St = Console.ReadLine().ToUpper();
                 Hr = double.Parse(Console.ReadLine());
                 Subjects.Add(St);
                 Hours.Add(Hr);
