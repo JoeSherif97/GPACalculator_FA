@@ -2,7 +2,7 @@
 
 ## Overview
 
-The GPA Calculator application is a text-based program designed to calculate various GPA metrics based on the GPA system of Future Academy. It includes functionalities to calculate current and cumulative GPA, convert GPA to letter grades, and determine the required GPA for future goals. The application is written in C# and provides a user-friendly interface to manage GPA calculations effectively.
+The GPA Calculator application is a text-based (C++/C#) graphical-based (Winform/C#) program designed to calculate various GPA metrics based on the GPA system of Future Academy. It includes functionalities to calculate current and cumulative GPA, convert GPA to letter grades, and determine the required GPA for future goals. The application is written in C# and provides a user-friendly interface to manage GPA calculations effectively.
 
 ## Features
 
@@ -100,13 +100,19 @@ Displays the main menu options to the user:
    - Enter grades and credit hours using space separation for more efficient input.
 
 ## Application Screenshots
+#### including text-based and graphical-based screenshots
 
 ### Screenshot Example
+#### Loading Screen:
+![image](https://github.com/user-attachments/assets/39a167c9-1193-4520-b281-39cb556c421d)
+
 #### Main Menu:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/40df4f31-4448-47c3-a3d3-73ce9fc77c1d)
+![image](https://github.com/user-attachments/assets/fba67180-96e9-4530-9450-b2dddef4e818)
 
 #### GPA Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/a1e757f5-a879-43f6-8831-22f59166ab53)
+![image](https://github.com/user-attachments/assets/68bee6fb-f695-4865-bbeb-d5b1c518ea48)
 
 In the example provided in the screenshot:
 - The user is prompted to enter the current semester number.
@@ -114,8 +120,20 @@ In the example provided in the screenshot:
 - For each subject, the user inputs the letter grade followed by the credit hours.
 - The application calculates and displays the semester GPA, cumulative GPA, and permitted hours for the next semester.
 
+##### Statistics:
+![image](https://github.com/user-attachments/assets/a81de382-e2ec-4272-a85b-eb4b3ac4af7a)
+
+##### Entering New Semester:
+![image](https://github.com/user-attachments/assets/7e947c23-2979-4671-ac8c-9147ae6cab2f)
+![image](https://github.com/user-attachments/assets/1db2b09d-594b-49bc-aaf7-dca72e7c8013)
+
+##### Finished All Semester MessageBox:
+![image](https://github.com/user-attachments/assets/de5eab56-5094-4588-a233-558444feb538)
+
 #### Letter Grader Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/6890a04b-4d33-44ad-bb2a-10a49b0ff712)
+![image](https://github.com/user-attachments/assets/128a78f7-ea84-4d00-a082-ae139abe61a0)
+
 ##### Overview
 This feature allows users to input their Grade Point Average (GPA) and receive the corresponding letter grade based on a predefined grading scale.
 
@@ -125,7 +143,9 @@ The user is prompted to enter their GPA.
 ###### GPA Conversion:
 The application converts the numeric GPA into a letter grade using a predefined scale.
 ###### Output:
-The application displays the input GPA and its corresponding letter grade.
+- The application displays the input GPA and its corresponding letter grade.
+- How much you can present your GPA in Percentage
+- Percentage presented in Progress Bar with different colors for differnt scores
 
 ##### Purpose
 This feature helps users quickly determine the letter grade equivalent of their GPA, facilitating a better understanding of their academic performance in a more familiar format.
@@ -133,6 +153,8 @@ This feature helps users quickly determine the letter grade equivalent of their 
 #### Future GPA Prediction Function: (2 cases)
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/149a24e9-1792-43ce-9c61-2e75525c1589)
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/1b0e6e08-6f05-4751-a315-bf6ebc08e605)
+![image](https://github.com/user-attachments/assets/ae611e1d-62bf-485e-9f9c-742335de8b34)
+
 ### Feature Overview
 
 **Functionality and Purpose:**
@@ -150,6 +172,7 @@ This feature helps users quickly determine the letter grade equivalent of their 
 
 #### Average Grade Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/a470d817-43e1-438d-aa9e-4599221285f2)
+![image](https://github.com/user-attachments/assets/88f1b819-5bd8-40fb-ac3a-ed7cb7bf2f12)
 
 ### Feature Overview
 
@@ -166,6 +189,7 @@ This feature helps users quickly determine the letter grade equivalent of their 
 
 #### Target Subject GPA Calculate Function:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/e5382ba0-5e21-42e5-9119-f5eda039d005)
+![image](https://github.com/user-attachments/assets/9d85fa7f-4789-4d9b-9c6a-855b1b9a1058)
 
 #### Feature Overview
 
@@ -179,12 +203,29 @@ This feature helps users quickly determine the letter grade equivalent of their 
        - Their current GPA.
        - The GPA they aim to achieve.
      - **Calculation:** The program computes the required grades for each subject to reach the desired GPA.
-     - **Output:** The program displays the minimum grade required for each subject to achieve the target GPA.
-       - **Example:** With 6 subjects, a current GPA of 2.6, and a target GPA of 3.0, the program specifies the necessary grades for each subject, such as A+ for most subjects and a D- for one subject, to reach a GPA of 3.4.
+     - **Output:**
+        - The program displays the minimum grade required for each subject to achieve the target GPA.
+        - if the GPA wished is on specific level, the application will tell the user if he has any any-grade subjects
+     - **Example:** With 6 subjects, a current GPA of 2.6, and a target GPA of 3.0, the program specifies the necessary grades for each subject, such as A+ for most subjects and a D- for one subject, to reach a GPA of 3.4.
    - **Purpose:** This feature helps students understand the specific academic performance needed in each subject to reach their GPA goals. It provides clear and actionable insights, allowing students to strategize their study efforts and focus on achieving the necessary grades in each subject.
 
 #### About:
 ![image](https://github.com/JoeSherif97/GPACalculator_FA/assets/138067777/6c8494ff-2542-4244-8966-64126d8e30c4)
+![image](https://github.com/user-attachments/assets/f1a8f5ce-aaba-4a5f-8463-eef5fc62da16)
+
+#### Exit Screen:
+![image](https://github.com/user-attachments/assets/33090055-4fa3-45bd-a4b3-9c5451a84512)
+
+##### Cases:
+###### No:
+It will show this MessageBox then return the user to the main screen
+![image](https://github.com/user-attachments/assets/4df3cd0f-92a1-415d-8e8f-fe70fab9e0c5)
+
+###### Yes:
+It will show 2 corresponding MessageBoxes:
+![image](https://github.com/user-attachments/assets/5ff5e029-9e8a-4b7d-807f-bdaab63798ce)
+![image](https://github.com/user-attachments/assets/e9f96a9d-2ba3-4e65-8eee-8807779c9223)
+Then Exit The Program.
 
 ## Developers
 
